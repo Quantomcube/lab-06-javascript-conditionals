@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var number = prompt ("Please enter a four digit number");
+console.log ("orginal number = " + number)
+var Thou_mod = number%1000;
+var thou = number - Thou_mod;
+var Thou_Real = thou/1000;
+
+console.log (Thou_Real + " Thousands");
+
+var hund_Mod = Thou_mod%100;
+var hund = Thou_mod - hund_Mod;
+var hund_Real = hund/100;
+
+console.log (hund_Real + " Hundred");
+
+var ten_Mod = hund_Mod%10;
+var ten = hund_Mod - ten_Mod;
+var ten_Real = ten/10;
+
+console.log (ten_Real + " Tens");
+
+var ones_mod = ten_Mod%1;
+var ones = ten_Mod - ones_mod;
+var ones_Real = ones/1;
+
+console.log (ones_Real + " Ones");
+
+</script>
+</body>
+</html>
